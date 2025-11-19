@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npm run build",
+    "working_directory": "/home/kavia/workspace/code-generation/elegant-chess-platform-165220-165229/chess_game_frontend"
+}
