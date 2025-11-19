@@ -1,47 +1,80 @@
-# Astro Starter Kit: Minimal
+# Ocean Chess Game - Astro Frontend
 
-```sh
-npm create astro@latest -- --template minimal
+An elegant, interactive chess game built with Astro, React island, chess.js, and styled using Tailwind CSS per the Ocean Professional theme.
+
+## 🎯 Features
+
+- Fully playable, local chess game (no login required)
+- Interactive chess board with drag/click for legal moves
+- Modern responsive layout: board and move history, game controls, and status
+- Ocean Professional palette: blues & amber accent, subtle gradients, rounded corners
+- Dark/light mode theme toggle
+- Move history list with navigation (jump, undo)
+- Accessible for keyboard and screen readers
+- Fast and deployable on Astro
+
+## 🚀 Setup & Development
+
+1. **Install dependencies** (from `chess_game_frontend` root):
+    ```sh
+    npm install
+    ```
+2. **Run locally**:
+    ```sh
+    npm run dev
+    ```
+    - Open browser to [http://localhost:3000](http://localhost:3000).
+
+3. **Build for production**:
+    ```sh
+    npm run build
+    npm run preview
+    ```
+    - Preview will be at the port shown (default: 3000).
+
+## 🛠️ Tech Stack
+
+- [Astro](https://astro.build) (static-first UI)
+- [React.js] (island for interactivity, chess board)
+- [chess.js](https://github.com/jhlywa/chess.js) (core game logic)
+- [Tailwind CSS](https://tailwindcss.com/) (Ocean Professional theme)
+- Responsive, accessible, modern UI
+
+## 📁 Project Structure
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
 ├── public/
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/
+│   │   ├── ChessBoard.jsx
+│   │   ├── ChessApp.astro
+│   │   └── ThemeToggle.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   └── index.astro
+│   └── styles/
+│       └── global.css
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Add static assets (images, icons, etc.) to the `public/` folder.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🔷 Ocean Professional Theme
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Blue (`#2563EB`) and amber (`#F59E0B`) as branding/accent.
+- Modern, minimal, rounded corners and shadows.
+- Subtle gradients for visual depth.
+- Accessible dark/light mode (ThemeToggle button).
 
-## 🧞 Commands
+## ♟ Usage
 
-All commands are run from the root of the project, from a terminal:
+Open the site. Play chess by clicking on pieces and choosing legal squares. History and controls appear alongside the board.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+No backend connection or multiplayer is provided in this basic app.
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Enjoy Ocean Chess! Contributions & issues welcome.
+

@@ -44,3 +44,10 @@ export default [
     },
   },
 ];
+
+// ESLint 9+ way of ignoring generated/irrelevant files (see migration guide)
+export const ignores = [
+  ".astro/",
+  "node_modules/",
+  "dist/"
+];
